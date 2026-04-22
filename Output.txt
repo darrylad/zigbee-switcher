@@ -1,0 +1,165 @@
+% ./ns3 run scratch/assignment.cc
+-- Using default output directory /Users/dad/Documents/CS_434/ns-3.47/build
+-- Proceeding without cmake-format
+-- This clang version 16.0.0.16000026 requires libc++ to use std::tuple as std::map keys
+-- Some or all of the gtk libraries were not found. (missing: GTK3_GTK_LIBRARY GTK3_GTK_INCLUDE_DIR GTK3_GDK_INCLUDE_DIR GTK3_GDKCONFIG_INCLUDE_DIR GTK3_GDK_LIBRARY) 
+-- Python: development libraries were not found
+-- Boost was not found
+-- docs: doxygen documentation not enabled due to missing dependencies: doxygen dot dia
+-- Failed to locate sphinx-build executable (missing: SPHINX_EXECUTABLE) 
+-- docs: sphinx documentation not enabled due to missing dependencies: Sphinx epstopdf pdflatex latexmk convert dvipng dia
+-- Platform doesn't support TAP and EMU features. Continuing without them.
+-- Precompiled headers were enabled
+-- Processing src/antenna
+-- Boost Bessel function is required for CircularApertureAntennaModel  on platforms using Clang libc++ such as macOS.  You may need to clean up the CMake cache after installing it to pass this check.
+-- Processing src/aodv
+-- Processing src/applications
+-- Processing src/bridge
+-- Processing src/brite
+-- Skipping src/brite
+-- Processing src/buildings
+-- Processing src/click
+-- Skipping src/click
+-- Processing src/config-store
+-- Processing src/core
+-- Boost Units are an optional feature of length.cc.  Ubuntu ships it within the libboost-dev package.  You may need to clean up the CMake cache after installing it to pass this check.
+-- Processing src/csma
+-- Processing src/csma-layout
+-- Processing src/dsdv
+-- Processing src/dsr
+-- Processing src/energy
+-- Processing src/flow-monitor
+-- Processing src/internet
+-- Processing src/internet-apps
+-- Processing src/lr-wpan
+-- Processing src/lte
+-- Processing src/mesh
+-- Processing src/mobility
+-- Processing src/netanim
+-- Processing src/network
+-- Processing src/nix-vector-routing
+-- Processing src/olsr
+-- Processing src/openflow
+-- Skipping src/openflow
+-- Processing src/point-to-point
+-- Processing src/point-to-point-layout
+-- Processing src/propagation
+-- Processing src/sixlowpan
+-- Processing src/spectrum
+-- Processing src/stats
+-- Processing src/test
+-- Processing src/topology-read
+-- Processing src/traffic-control
+-- Processing src/uan
+-- Processing src/virtual-net-device
+-- Processing src/wifi
+-- Processing src/zigbee
+-- ---- Summary of ns-3 settings:
+Build profile                 : default
+Build directory               : /Users/dad/Documents/CS_434/ns-3.47/build
+Build with runtime asserts    : ON
+Build with runtime logging    : ON
+Build version embedding       : OFF (not requested)
+BRITE Integration             : OFF (Missing headers: "Brite.h" and missing libraries: "brite")
+DES Metrics event collection  : OFF (not requested)
+DPDK NetDevice                : OFF (not requested)
+Emulation FdNetDevice         : OFF (not requested)
+Examples                      : ON
+File descriptor NetDevice     : OFF (missing dependency)
+GNU Scientific Library (GSL)  : OFF (GSL was not found)
+GtkConfigStore                : OFF (GTK3 was not found)
+LibXml2 support               : ON
+MPI Support                   : OFF (not requested)
+ns-3 Click Integration        : OFF (Missing headers: "simclick.h" and missing libraries: "nsclick click")
+ns-3 OpenFlow Integration     : OFF (Missing headers: "openflow.h" and missing libraries: "openflow")
+Netmap emulation FdNetDevice  : OFF (not requested)
+PyViz visualizer              : OFF (Python Bindings are disabled)
+Python Bindings               : OFF (not requested)
+SQLite support                : ON
+Eigen3 support                : OFF (Eigen was not found)
+Tap Bridge                    : OFF (not requested)
+Tap FdNetDevice               : OFF (not requested)
+Tests                         : ON
+
+
+Modules configured to be built:
+antenna                   aodv                      applications              
+bridge                    buildings                 config-store              
+core                      csma                      csma-layout               
+dsdv                      dsr                       energy                    
+flow-monitor              internet                  internet-apps             
+lr-wpan                   lte                       mesh                      
+mobility                  netanim                   network                   
+nix-vector-routing        olsr                      point-to-point            
+point-to-point-layout     propagation               sixlowpan                 
+spectrum                  stats                     test                      
+topology-read             traffic-control           uan                       
+virtual-net-device        wifi                      zigbee                    
+
+
+Modules that cannot be built:
+brite                     click                     fd-net-device             
+mpi                       openflow                  tap-bridge                
+visualizer                
+
+
+-- Configuring done (5.6s)
+-- Generating done (1.4s)
+-- Build files have been written to: /Users/dad/Documents/CS_434/ns-3.47/cmake-cache
+[0/2] Re-checking globbed directories...
+[2/3] Linking CXX executable /Users/dad/Documents/CS_434/ns-3.47/build/scratch/ns3.47-assignment-default
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Starting simulation...
+802.15.4 nodes: 11
+802.11 nodes: 7 (1 AP + 6 STAs)
+Initial 802.15.4 channel: 12
+Target 802.15.4 channel: 25
+
+Time 2 s | 802.15.4 throughput = 21.76 kbps
+Time 3 s | 802.15.4 throughput = 27.84 kbps
+Time 4 s | 802.15.4 throughput = 30.4 kbps
+Time 5 s | 802.15.4 throughput = 28.16 kbps
+
+=== WIFI HIGH-BANDWIDTH TRANSFER STARTED ===
+Time: 6 s
+Coordinator now sees high ED on channel 12
+
+
+=== INTERFERENCE DETECTED ===
+Time: 6 s
+Measured ED: -35 dBm
+Threshold: -60 dBm
+Coordinator decides to switch from channel 12 to channel 25
+Time 6 s | 802.15.4 throughput = 27.84 kbps
+
+=== CHANNEL SWITCH COMPLETED ===
+Time: 6.5 s
+Old channel: 12
+New channel: 25
+Switching latency: 500 ms
+
+Time 7 s | 802.15.4 throughput = 13.44 kbps
+Time 8 s | 802.15.4 throughput = 29.76 kbps
+Time 9 s | 802.15.4 throughput = 29.76 kbps
+Time 10 s | 802.15.4 throughput = 27.84 kbps
+Time 11 s | 802.15.4 throughput = 29.44 kbps
+Time 12 s | 802.15.4 throughput = 27.2 kbps
+Time 13 s | 802.15.4 throughput = 28.16 kbps
+Time 14 s | 802.15.4 throughput = 29.44 kbps
+Time 15 s | 802.15.4 throughput = 28.48 kbps
+Time 16 s | 802.15.4 throughput = 29.44 kbps
+Time 17 s | 802.15.4 throughput = 29.12 kbps
+
+=== WIFI HIGH-BANDWIDTH TRANSFER STOPPED ===
+Time: 18 s
+
+Time 18 s | 802.15.4 throughput = 29.44 kbps
+Time 19 s | 802.15.4 throughput = 27.84 kbps
+
+=== FINAL RESULTS ===
+Total received 802.15.4 data: 65560 bytes
+Interference started at: 6 s
+Switch started at: 6 s
+Switch completed at: 6.5 s
+Switching latency: 500 ms
